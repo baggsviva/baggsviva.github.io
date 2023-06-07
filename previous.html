@@ -12,7 +12,6 @@
       crossorigin="anonymous"
     />
 
-    <!-- <link rel="stylesheet" href="./solution.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -23,8 +22,9 @@
 
     <style>
       body {
-        background-color: /*black;*/ white;
+        background-color: white;
       }
+
       h1 {
         text-transform: uppercase;
         font-size: 1.5rem;
@@ -37,22 +37,19 @@
         text-align: justify;
         text-indent: 40px;
         font-size: 1rem;
+        padding-left: 10px;
+        padding-right: 10px;
       }
 
       .motivation-img {
-        /*border: 5px solid white; #0d6efd;*/
-        border-radius: 5px 5px 5px 5px;
-        width: 50%; /*width: 100%;*/
+        border-radius: 5px;
+        width: 100%;
+        max-width: 400px;
         margin-bottom: 20px;
       }
 
       .poster {
-        width: 50%;
-        margin-left: 25%;
-        margin-top: 50px;
-        margin-bottom: 40px;
-        color: /*white;*/ black;
-        /* font-family: "Libre Baskerville", serif; */
+        color: black;
         font-family: sans-serif;
         text-align: center;
       }
@@ -61,6 +58,22 @@
         display: block;
         margin: auto;
         margin-bottom: 50px;
+      }
+
+      /* Media query for mobile devices */
+      @media only screen and (max-width: 767px) {
+        .poster {
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 50px;
+          margin-bottom: 40px;
+        }
+
+        .motivation-img {
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
     </style>
   </head>
@@ -94,16 +107,11 @@
         class="motivation-img"
         src="images/avanza-oakley.png"
         alt="avanza-oakley"
-      />
-      <br />
-      <img class="motivation-img" src="images/quad.png" alt="quad" />
-      <br />
-      <img class="motivation-img" src="images/taaca.png" alt="taaca" />
-      <br />
-      <img class="motivation-img" src="images/sb.png" alt="sb" />
-      <br />
-      <img class="motivation-img" src="images/centro.png" alt="centro" />
-      <br />
+      /><br />
+      <img class="motivation-img" src="images/quad.png" alt="quad" /><br />
+      <img class="motivation-img" src="images/taaca.png" alt="taaca" /><br />
+      <img class="motivation-img" src="images/sb.png" alt="sb" /><br />
+      <img class="motivation-img" src="images/centro.png" alt="centro" /><br />
       <img class="motivation-img" src="images/central.png" alt="central" />
     </div>
 
@@ -120,3 +128,4 @@
     ></script>
   </body>
 </html>
+
