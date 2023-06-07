@@ -13,14 +13,12 @@
       crossorigin="anonymous"
     />
 
-   
     <style>
-            body {
-        font-family: /*"Poppins",*/ sans-serif;
+      body {
+        font-family: sans-serif;
         margin: 50px 50px 0 50px;
         background-color: #faf9f6;
         display: block;
-        /* flex-direction: column; */
         min-height: 95vh;
       }
 
@@ -29,6 +27,7 @@
         margin: auto;
         margin-bottom: 50px;
       }
+
       .creative {
         color: midnightblue;
       }
@@ -45,6 +44,7 @@
         margin-bottom: 30px;
         text-align: center;
       }
+
       .devguru-site {
         font-size: 0.8rem;
         padding-left: 20px;
@@ -91,24 +91,20 @@
         margin-bottom: 50px;
       }
 
-      @media (max-width: 767px) {
-        .title-image {
-          width: 40%;
-          margin-left: auto;
-          margin-right: auto;
-          display: block;
+      @media (max-width: 680px) {
+        .logo {
+          width: 100px;
         }
 
-        /* Adjust the width percentage as needed */
+        .title-image {
+          width: 80%;
+          margin: 0 auto;
+          display: block;
+        }
 
         h1 {
           font-size: 1.5rem;
           text-align: center;
-        }
-
-        .card-title {
-          padding-top: 0px;
-          font-size: 1rem;
         }
 
         .card {
@@ -119,12 +115,14 @@
 
         .card img {
           margin-bottom: 10px;
-          margin-left: auto;
-          margin-right: auto;
-          display: block;
+          margin-left: 10px;
+          margin-top: 5px;
+          width: 10%;
+          height: 10%;
+          display: inline;
           object-fit: cover;
-          width: 50%;
-          height: auto;
+          width: 20%;
+          height: 20%;
         }
 
         .card-text {
@@ -142,7 +140,7 @@
         <img
           class="title-image"
           src="images/devgurulogo.png"
-          alt="devguru-logo  pic"
+          alt="devguru-logo pic"
         />
         <h2 class="card-title">We Design.Create.Develop.</h2>
 
@@ -171,16 +169,6 @@
           limitless opportunities for growth and innovation.
         </p>
       </div>
-
-      <!-- <div class="right card">
-              <img class="tile-image" src="images/centro.png" alt="metal structure" />
-              <h2 class="card-title">Construction</h2>
-            <p>
-              Built by our team of professional developers, we ensure the most
-              rigourous and modern websites. Built from scratch using HTML and CSS.
-              Only the best for you.
-            </p>
-          </div> -->
     </div>
 
     <div id="button">
@@ -200,3 +188,4 @@
     </footer> -->
   </body>
 </html>
+
