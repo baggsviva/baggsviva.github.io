@@ -61,22 +61,7 @@
         width: 25%;
         padding-left: 20px;
       }
-      
-  /********************New Codes*******************************/
-      .blogimg {
-          width: 75%;
-          height: auto;
-          text-align: center;
-        }
 
-        .blogimg img {
-          max-width: 100%;
-          height: auto;
-        }
-      
-
-
-/******************* Previous Codes that still Used. **********/
       /* blogimg */
       .blogimg {
         background-color: #7a7878;
@@ -84,7 +69,18 @@
         padding: 5px;
         border-radius: 5px;
       }
-/************************************************************/
+      /************ New Codes ************/
+      .blogimg {
+        width: 75%;
+        height: auto;
+        text-align: center;
+      }
+
+      .blogimg img {
+        max-width: 100%;
+        height: auto;
+      }
+      /*********************************/
       .sometext-title {
         margin-top: 20px;
       }
@@ -142,9 +138,31 @@
         }
 
         /* blogimg */
-        .blogimg {
+        /* .blogimg {
           background-color: #7a7878;
           width: 0px;
+        } */
+
+        /* .blogimg {
+          width: 75%;
+          height: auto;
+          text-align: center;
+        }
+
+        .blogimg img {
+          max-width: 100%;
+          height: auto;
+        } */
+
+        .blogimg {
+          width: 75%;
+          height: auto;
+          text-align: center;
+        }
+
+        .blogimg img {
+          max-width: 100%;
+          height: auto;
         }
 
         /* About Us & Popular Post */
@@ -152,22 +170,15 @@
           width: 290px;
         }
       }
-      
-       .responsive-img {
-       width: 100%;
-       height: auto;
-       max-width: 100%;
-     }
-      
-      @media only screen and (max-width: 414px) and (-webkit-device-pixel-ratio: 3) {
-  .rightcolumn .blogimg img[src="images/boule3.png"] {
-    height: auto !important;
-    width: 100% !important;
-    max-width: none !important;
-  }
-    
-  
-   }
+
+      /* Media query for iPhone screens */
+      @media only screen and (max-device-width: 414px) and (-webkit-device-pixel-ratio: 3) {
+        .blogimg img[src="images/boule3.png"] {
+          height: auto !important;
+          width: 100% !important;
+          max-width: none !important;
+        }
+      }
     </style>
   </head>
 
@@ -217,7 +228,7 @@
             <img
               src="images/eidpic2.png"
               style="max-width: 100%; height: auto"
-              alt="eidpic-2 pic"
+              alt="eidpic2 pic"
             />
           </div>
 
@@ -247,9 +258,19 @@
           <h2>River Boulevard</h2>
           <h5>Just Walking, May 28, 2023</h5>
 
+          <!-- <div
+            class="blogimg"
+            style="width: 75%; height: 100%; text-align: center"
+          >
+            <img
+              src="images/boule3.png"
+              style="max-width: 100%; height: 100%"
+              alt="boulevard pic"
+            />
+          </div> -->
+
           <div class="blogimg">
-           <img class="responsive-img"
-              src="images/boule3.png" alt="boulevard pic" />
+            <img src="images/boule4.png" alt="boulevard pic" />
           </div>
 
           <p class="sometext-title">
@@ -340,8 +361,6 @@
         </div>
       </div>
     </div>
-    
-    <!-- Back Button -->
 
     <div id="button">
       <button type="button" class="btn btn-outline-primary btn-sm px-6">
@@ -349,13 +368,14 @@
       </button>
     </div>
 
- <div class="footer">
+    <div class="footer">
       <span class="mb-3 mb-md-0 text-body-secondary" style="font-size: 14px"
         >© 2023 Gabb Vivares - All Rights Reserved.</span
       >
     </div>
 
-    
+    <!-- Back Button -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
