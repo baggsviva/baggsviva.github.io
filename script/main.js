@@ -13,10 +13,6 @@ myImage.onclick = () => {
   }
 };
 
-document.querySelector('a[href="blog.html"]').addEventListener('click', function(event) {
-      event.preventDefault();
-    });
-
 
 /* const myHeading = document.querySelector("h1");
 myHeading.textContent = "Hello Mis. Or.!"; */
