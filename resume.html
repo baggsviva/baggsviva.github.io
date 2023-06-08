@@ -14,8 +14,6 @@
     />
 
     <style>
-      
-        
       body {
         font-family: sans-serif;
       }
@@ -29,6 +27,7 @@
 
       p {
         margin-left: 20px;
+        margin-right: 20px;
         text-indent: 50px;
         line-height: 1.5;
         text-align: justify;
@@ -66,14 +65,13 @@
       }
 
       @media (max-width: 767px) {
-       
-        .d-flex.justify-content-end {
-        justify-content: center !important;
-      } 
-       
         /* body {
           padding: 20px;
-        }  */
+        } */
+
+        .d-flex.justify-content-end {
+          justify-content: center !important;
+        }
 
         .profile-pic {
           margin: 0 auto;
@@ -84,11 +82,11 @@
         h2 {
           text-align: center;
         }
-        
+
         p {
-        margin-left: 20px;
-        margin-right: 20px;
-      }
+          margin-left: 20px;
+          margin-right: 20px;
+        }
 
         ul {
           padding-left: 20px;
@@ -98,16 +96,35 @@
           margin: 0 auto;
           width: 100%;
         }
+        /*************************************************/
+        ul.skills-column {
+          display: flex;
+          flex-direction: column;
+        }
+
+        ul.skills-column li {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        /**********************************************/
 
         .footer {
           text-align: center;
-          /*  margin-top: 0; */
-           margin-bottom: 20px;
+          margin-top: 0;
+          margin-bottom: 20px;
           margin-left: auto;
-          margin-right:auto;
+          margin-right: auto;
         }
       }
-    
+
+      @media (min-width: 768px) {
+        /* Add this CSS for three columns skills in desktop viewport */
+        ul.skills-column {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 7px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -189,8 +206,6 @@
         <p>March 2015 - January 2020</p>
         <ul>
           <li>Booking, Sales & Collection.</li>
-          <!-- <li></li>
-          <li></li> -->
         </ul>
       </li>
 
@@ -219,9 +234,30 @@
     <hr />
 
     <h2>Skills</h2>
+    <ul class="skills-column">
+      <li>
+        <div class="skill-name">Selling ⭐⭐⭐⭐⭐</div>
+        <!-- <div class="skill-rating"></div> -->
+      </li>
+      <li>
+        <div class="skill-name">Driving ⭐⭐⭐⭐⭐</div>
+      </li>
+      <li>
+        <div class="skill-name">Web Development ⭐⭐⭐⭐</div>
+      </li>
+      <li>
+        <div class="skill-name">Customer Service ⭐⭐⭐⭐⭐</div>
+      </li>
+      <li>
+        <div class="skill-name">Microsoft Office Suite⭐⭐⭐⭐</div>
+      </li>
+      <li>
+        <div class="skill-name">Photo & Video Editing ⭐⭐⭐⭐</div>
+      </li>
+    </ul>
 
-    <!-- <center> -->
-    <ul>
+    <!-- <h2>Skills</h2>
+    <ul class="skills-column">
       <table cellspacing="0">
         <tr>
           <td>
@@ -284,7 +320,7 @@
         </tr>
       </table>
     </ul>
-    <!-- </center> -->
+ -->
 
     <hr />
     <ul>
@@ -318,4 +354,5 @@
     </footer>
   </body>
 </html>
+
 
