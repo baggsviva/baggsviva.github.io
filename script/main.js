@@ -13,7 +13,7 @@ myImage.onclick = () => {
   }
 };
 
-document.querySelector('a[href="gabb.html"]').addEventListener('click', function(event) {
+document.querySelector('a[href="blog.html"]').addEventListener('click', function(event) {
       event.preventDefault();
     });
 
