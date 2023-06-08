@@ -74,7 +74,7 @@
           height: auto;
         }
 
-/******************* Previous Codes ***************************/
+/******************* Previous Codes that still Used. **********/
       /* blogimg */
       .blogimg {
         background-color: #7a7878;
@@ -148,6 +148,15 @@
         /* About Us & Popular Post */
         .rightimg {
           width: 290px;
+        }
+      }
+      
+      /* Media query for iPhone screens */
+      @media only screen and (max-device-width: 414px) and (-webkit-device-pixel-ratio: 3) {
+        .blogimg img[src="images/boule3.png"] {
+          height: auto !important;
+          width: 100% !important;
+          max-width: none !important;
         }
       }
     </style>
@@ -229,15 +238,9 @@
           <h2>River Boulevard</h2>
           <h5>Just Walking, May 28, 2023</h5>
 
-          <div
-            class="blogimg"
-            style="width: 75%; height: 100%; text-align: center"
-          >
-            <img
-              src="images/boule3.png"
-              style="max-width: 100%; height: 100%"
-              alt="boulevard pic"
-            />
+          <div class="blogimg">
+           <img
+              src="images/boule3.png" alt="boulevard pic"/>
           </div>
 
           <p class="sometext-title">
