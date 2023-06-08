@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
     <title>Family</title>
     <link rel="icon" href="images/favicon.ico" type="highridge-ico" />
@@ -11,8 +12,218 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">    
     <style>
-      
       body {
+      margin: 8% 0;
+      background-color: white;
+    }
+
+    /* Family */
+    
+    h1 {
+      color: #0d6efd;
+      text-align: center;
+      font-family: "Kaushan Script", sans-serif;
+    }
+
+    .family-para {
+      text-align: justify;
+      font-family: sans-serif;
+      width: 400px;
+      margin: 20px auto;
+    }
+    
+    /* Carousel */
+
+    .carousel-item img {
+  border-radius: 10px;
+}
+
+    #carouselExampleCaptions {
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      height: auto;
+    }
+
+    .carousel-indicators {
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    .carousel-container {
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      margin-bottom:25px;
+      height: auto;
+      width: 30%;
+     
+    }
+    
+    /* Laling Section */
+
+    .flex-container {
+      height: auto;
+      text-align: center;
+    }
+
+    .card {
+      display: inline-block;
+      width: 301px;
+      text-align: center;
+      margin: 0 10px;
+      
+    }
+    .card-img-top{
+      border-radius: 5px;
+    }
+
+    .card-body {
+      text-align: justify;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .wife-text{
+      padding-top:20px;
+      text-indent:30px;
+    }
+
+    
+    
+    /* Kids Section */
+
+    #first,
+    #second,
+    #third {
+      width: 50%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid black 3px;
+  margin-top: 20px;
+
+    }
+
+    #first{
+      margin-top:15px;
+    }
+
+   .child-para{
+      text-align: justify;
+      text-indent: 30px;
+      margin-left:auto;
+      margin-left:auto;
+      padding-left:5px;
+      padding-right:5px;
+      padding-bottom:20px;
+    }
+
+    .child-name{
+      padding-top:20px;
+    }
+
+    .child-pic{
+      padding-bottom:30px;
+    }
+
+    div {
+      text-align: justify;
+      font-family: sans-serif;
+    }
+    
+    #first {
+      background-color: lightblue;
+      border-radius: 5px;
+   
+      
+    }
+
+    #second {
+      background-color: lightgreen;
+      border-radius: 5px;
+    }
+
+    #third {
+      background-color: lightyellow;
+      border-radius: 5px;
+    }
+
+    .kids-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      height: auto;
+      width: 100%;
+    }
+
+    .kids-content {
+      margin: 0;
+      padding: 0;
+    }
+
+    .kids-image {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+
+    #button {
+          text-align: center;
+          margin-top: 20px;
+        }
+      
+
+
+    /* Mobile Styles */
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      .family-para {
+        width: 90%;
+        text-indent:30px;
+        text-align: justify;
+      }
+
+      .carousel-container {
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      margin-bottom:25px;
+      height: auto;
+      width: 90%;
+     
+    }
+
+      .card {
+        width: 90%;
+      }
+
+      .kids-image {
+        width: 100px;
+        height: 100px;
+      }
+
+     #first,
+    #second,
+    #third {
+      width: 100%;
+      border: solid black 3px;
+      margin-top: 20px;
+    }
+
+  }
+      /*****************************Previous Codes Starts Here! *********************************/
+      /* body {
         margin-top: 8%;
         margin-bottom: 8%;
         background-color: white;
@@ -20,7 +231,7 @@
 
       /* Family */
       
-      h1{
+      /* h1{
        color:#0d6efd;
         width:400px;
         text-align: center;
@@ -43,7 +254,7 @@
       
       /*Carousel*/
 
-      #carouselExampleCaptions{
+      /* #carouselExampleCaptions{
         display: block;
        justify-content: center;
        align-items: center;
@@ -52,18 +263,18 @@
        margin-right:0px;
        
 
-      }
+      } */
 
-      .carousel-indicators{
+      /* .carousel-indicators{
        
        display: block;
        padding-left: 17px;
        padding-top:0px;
        padding-bottom: 230px;
-      } 
+      }  */
 
 
-     .carousel-container{
+     /* .carousel-container{
        display: flex;
        justify-content: center;
        align-items: center;
@@ -71,12 +282,12 @@
        margin-left:420px;
        margin-top: -290px;
        margin-bottom:-470px;
-      }
+      }  */
 
       
       /* Laling Section */
       
-      .flex-container {
+      /* .flex-container {
         display: block;
         height: 100vh;
         width:160%;
@@ -107,7 +318,7 @@
 
       /* Kids Section */
       
-      div {
+      /* div {
         width: 400px;
         text-align: justify;
         font-family: sans-serif;
@@ -128,9 +339,9 @@
         margin-top: 280px;
         margin-right: 50px;
         font-family: sans-serif;
-      }
-
-      #second {
+      } */
+/*  */
+      /* #second {
         background-color: #ff0032;
         padding: 15px 25px 140px 25px;
         border: solid black;
@@ -152,13 +363,13 @@
         display: block;
         margin: auto;
         margin-bottom: 50px;
-      }
+      } */
 
-      @media (max-width: 768px) {
+      /* @media (max-width: 768px) {
 
         /* Family */
 
-        .family-para{
+        /* .family-para{
       display: block;
       text-align:justify;
       display: center;
@@ -168,11 +379,11 @@
       margin-top:20px;
      
     }
-      
+       */
 
         /* Carousel */
 
-        #carouselExampleCaptions{
+        /* #carouselExampleCaptions{
         display: block;
        justify-content: center;
        align-items: center;
@@ -194,8 +405,8 @@
        
 
        
-      } 
-
+      }*/
+/* 
       .carousel-indicators [data-bs-target] {
     box-sizing: content-box;
     flex: 0 1 auto;
@@ -213,9 +424,9 @@
     border-bottom: 10px solid transparent;
     opacity: .5;
     transition: opacity .6s ease;
-}
+} */
 
-     .carousel-container{
+     /* .carousel-container{
        display: center;
        justify-content: center;
        align-items: center;
@@ -225,11 +436,11 @@
        height: 400px;
        width:300px;
       
-      }
+      } */
 
         /* Laling */
 
-        .card-title{
+        /* .card-title{
           font-size: 1.0rem;
          
         }
@@ -241,9 +452,9 @@
         text-indent:0px;
         margin-top: 370px;
        
-      }
+      } */
 
-      .card-body {
+      /* .card-body {
         text-align:justify;
         font-family: sans-serif;
         height: 300px;
@@ -252,12 +463,12 @@
         text-indent:40px;
        
         
-      }
+      } 
 
-      
+       */
       /* Kids */
 
-        #first,
+        /* #first,
         #second,
         #third {
           margin-left: 0;
@@ -286,7 +497,9 @@
           text-align: center;
           margin-top: 20px;
         }
-      }
+      } */
+
+      /******************************** Previous Codes Ends Here! ***************************************/
     </style>
   </head>
 
@@ -325,11 +538,8 @@
       <div class="carousel-inner"> 
                             
          <div class="carousel-item active">
-         <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg> -->
               <img src="images/3kids.png" class="d-block w-100 h-0" alt="3kids pic">
             <div class="carousel-caption d-none d-md-block">
-         <!-- <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p> -->
             </div>
          </div>
                          
@@ -387,7 +597,7 @@
         
         <div class="card-body">
           <!-- <h5 class="card-title"><strong><em>Rolyn Ann</em></strong></h5> -->
-          <p class="card-text">
+          <p class="wife-text">
             My wife, Rolyn Ann Vivares, is not only my beloved partner but also the embodiment of a truly beautiful soul. Her inner radiance shines brightly through her loving and caring nature, 
             while her unwavering faith in God serves as a constant inspiration in my life. As a mother to our children, her love and dedication are unparalleled, and I find myself constantly amazed by her thoughtfulness and selflessness. Even during moments when she may not feel her best, she effortlessly goes above and beyond, gracefully juggling numerous responsibilities. From preparing delectable meals to tending to household chores and meticulously caring for our laundry, 
             her commitment to creating a happy and harmonious home is truly remarkable. She is an absolute blessing, and I am forever grateful to have her by my side. With her, I feel complete in every aspect, and I treasure each and every moment spent together. Thank you for being the incredible woman that you are, my love. My affection for you knows no bounds.
@@ -402,51 +612,54 @@
 
 
     <div id="first">
-      <p>
-        <p><em><strong>Johanne Velvety</strong></em> <br /><br /></p>
-        <img
+      
+        <p class="child-name"><em><strong>Johanne Velvety</strong></em> <br /><br /></p>
+        <img class="child-pic"
           src="./images/circle-images/jv-red-modified.png"
           width="100"
           alt="johanne pic"
         />
-        <br />Johanne Velvety is the eldest child in the family, born on June
+        <br /><p class="child-para">Johanne Velvety is the eldest child in the family, born on June
         20, 2014. She is regarded as a precious gift from God to the couple. As
         the firstborn, she received abundant love and attention. Johanne was
         raised with tender care and affection, ensuring that all her needs were
         met. We, as parents, provided her with everything she desired, including
         toys.
+        </p>
       </p>
     </div>
 
     <div id="second">
-      <p>
-        <em><strong>Kent Thomas</strong></em> <br /><br />
-        <img
+      
+      <p class="child-name"><em><strong>Kent Thomas</strong></em> <br /><br /></p>
+        <img class="child-pic"
           src="./images/circle-images/kentom-modified.png"
           width="100"
           alt="Kentom pic"
         />
-        <br />Kent Thomas is the second child and the only son in the family,
+        <br /><p class="child-para">Kent Thomas is the second child and the only son in the family,
         born on November 30, 2018. His arrival completed the couple’s world.
         Being regarded as God's answered prayer. He received equal love and
         attention, just like his older sister. We, as parents, made sure to
         provide everything that brought him joy and happiness.
-      </p>
+        </p>
+     
     </div>
 
     <div id="third">
-      <p>
-        <em><strong>Jehann Vienna</strong></em> <br /><br />
-        <img
+     
+        <p class="child-name"><em><strong>Jehann Vienna</strong></em> <br /><br /></p>
+        <img class="child-pic"
           src="./images/circle-images/jehann-black-white-modified.png"
           width="100"
           alt="jehann pic"
         />
-        <br />Jehann Vienna, the youngest and final child of the family, entered
+        <br /><p class="child-para">Jehann Vienna, the youngest and final child of the family, entered
         the world on May 7, 2022. Her arrival was seen as an extra blessing for
         the family, much like her older brother's presence. As she continues to
         grow, she demonstrates remarkable progress every day.
-      </p>
+        </p>
+     
     </div>
 
     <br />
