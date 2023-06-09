@@ -61,11 +61,25 @@ h2 {
     margin-right: auto;
   }
 
+  .hello {
+    margin-left: auto;
+    margin-right: auto;
+    display: center;
+  }
+
+  .nav-fills {
+    margin-left: auto;
+    margin-right: auto;
+    display: center;
+  }
+
   p {
     /* padding-top: 0px; */
     margin-left: 20px;
     margin-right: 20px;
     /* margin-top: 40px; */
+    padding-left: 5px;
+    padding-right: 5px;
     text-indent: 50px;
     line-height: 1.5;
     text-align: justify;
@@ -90,5 +104,12 @@ h2 {
     padding-left: 5px;
     /* margin-right: auto; */
     color: black;
+  }
+  .col-12 {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
   }
 }
